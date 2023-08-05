@@ -1,4 +1,7 @@
-export default function about() {
+import Image from "next/image"
+import BrunoFoto from '../../../../public/data/BrunoProfile.jpeg' 
+
+export default function HomeAbout() {
     return(
         <>
             <div>
@@ -12,6 +15,7 @@ export default function about() {
                     Desenvolvedor FullStack.
                 </h2>
             </div>
+            <Image src={BrunoFoto}/>
         </>
     )
 }
